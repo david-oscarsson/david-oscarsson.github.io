@@ -48,7 +48,7 @@
 				height: 100%;
 				background: linear-gradient(45deg, #FF0000, #FF0000, #FF8000, #FFDD00, #FF8000, #FF0000);
 				background-size: 400% 400%;
-				animation: change 5s ease-in-out infinite;
+				animation: change-left 5s ease-in-out infinite;
 			}
 			.logo-background-right {
 				position: absolute;
@@ -56,9 +56,9 @@
 				right: 0;
 				width: 50%;
 				height: 100%;
-				background: linear-gradient(315deg, #FF0000, #FF8000, #FFDD00, #FF8000, #FF0000, #FF0000);
+				background: linear-gradient(45deg, #FF0000, #FF8000, #FFDD00, #FF8000, #FF0000, #FF0000);
 				background-size: 400% 400%;
-				animation: change 5s ease-in-out infinite;
+				animation: change-right 5s ease-in-out infinite;
 			}		
 			.platform-links{
 				display: block;
@@ -70,7 +70,7 @@
 			.platform-link:not(:first-child) {
 				padding-left: 3rem;
 			}
-			@keyframes change {
+			@keyframes change-left {
 				0% {
 					background-position: 0 50%
 				}
@@ -81,6 +81,18 @@
 					background-position: 0 50%
 				}
 			}
+			
+			@keyframes change-right {
+				0% {
+					background-position: 100% 50%
+				}
+				50% {
+					background-position: 0 50%
+				}
+				100% {
+					background-position: 100% 50%
+				}
+			}			
   	</style>
   </head>
   <body>
